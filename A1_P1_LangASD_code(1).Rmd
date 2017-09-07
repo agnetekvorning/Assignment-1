@@ -80,6 +80,7 @@ Tip: There is a package called stringr, which will be very handy for you also in
 ```{r}
 
 token$VISIT=str_extract(token$VISIT,"\\d")
+LU$VISIT=str_extract(LU$VISIT,"\\d")
 
 ```
 
@@ -95,6 +96,10 @@ Tip: You will have to do identical work for both data sets, so to save time on t
 
 
 ```{r}
+
+token$SUBJ=gsub("\\.","",token$SUBJ)
+demo$SUBJ=gsub("\\.","",demo$SUBJ)
+LU$SUBJ=gsub("\\.","",LU$SUBJ)
 
 ```
 
